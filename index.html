@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario con captcha</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><img src="imagenes/logo.png" class="logo"></h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="titulo">Formulario</h1>
+        <form action="" method="get" name="info">
+            <div class="form-label">
+                <label for="">Carnet:</label>
+                <input type="text">
+            </div>
+            <div class="form-label">
+                <label for="">Primer nombre:</label>
+                <input type="text" name="Pnombre">
+            </div>
+            <div class="form-label">
+                <label for="">Segundo nombre:</label>
+                <input type="text" name="Snombre">
+            </div>
+            <div class="form-label">
+                <label for="">Primer apellido:</label>
+                <input type="text" name="Papellido">
+            </div>
+            <div class="form-label">
+                <label for="">Segundo apellido:</label>
+                <input type="text" name="Sapellido">
+            </div>
+            <div class="form-label">
+                <label for="">Fecha de nacimiento:</label>
+                <input type="date" max="2024-12-31">
+            </div>
+            <div class="form-label">
+                <label for="">Correo electronico:</label>
+                <input type="email" id="e" oninput="verificarEmail()">
+                <p id="error-msg">Ingrese un correo valido</p>
+            </div>
+            <div class="form-label">
+                <label for="">Sexo:</label>
+                    <!--<label for="M"><input type="radio" id="M" name="sexo"checked />Masculino</label>
+                    <label for="F"><input type="radio" id="F" name="sexo"/>Femenino</label>-->
+                    <div>
+                    <label for="M" class="pad"><input type="radio" id="M" name="sexo"checked />Masculino</label>
+                    <label for="F" class="pad"><input type="radio" id="F" name="sexo"/>Femenino</label>
+                    </div>
+            </div>
+            <div class="form-label">
+                <label for="">DPI:</label>
+                <input type="text">
+            </div>
+            <div class="form-label">
+                <label label for="">Pasaporte:</label>
+                <input type="text">
+                </div>
+            <div class="form-label">
+                <label label for="">Pais:</label>
+                <select name="Paises">
+                    <option></option>
+                    <option>Belice</option>
+                    <option>Costa Rica</option>
+                    <option>El Salvador</option>
+                    <option>Guatemala</option>
+                    <option>Honduras</option>
+                    <option>Nicaragua</option>
+                    <option>Panamá</option>
+                </select>
+            </div>
+            <div class="form-label">
+            <label label for="">Dirección:</label>
+            <input type="email">
+            </div>
+            <div>
+            <div class="form-label">
+            <input type="button" value="validar" onclick="validar(info)">
+            </div>
+            </form>
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
