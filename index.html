@@ -43,7 +43,7 @@
             <div class="form-label">
                 <label for="">Correo electronico:</label>
                 <input type="email" id="e" oninput="verificarEmail()">
-                <p id="error-msg">Ingrese un correo valido</p>
+                <p id="error-msg">Ingrese un correo valido, ejemplo: hola@email.com</p>
             </div>
             <div class="form-label">
                 <label for="">Sexo:</label>
@@ -81,8 +81,10 @@
             </div>
             <div>
             <div class="form-label">
-                <div class="g-recaptcha" data-sitekey="6LdIqx0qAAAAACmQr2Difo8sO9xnYb4M0HR-1jVW"></div>
-            <input type="button" value="validar" onclick="validar(info)">
+                <div class="centro">
+                    <div class="g-recaptcha" data-sitekey="6LdIqx0qAAAAACmQr2Difo8sO9xnYb4M0HR-1jVW"></div>
+                </div>
+            <input class="but" type="button" value="VALIDAR" onclick="validar(info)">
             </div>
             </form>
     </div>
